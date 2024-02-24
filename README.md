@@ -86,6 +86,8 @@ Ensure that MLflow and scikit-learn are installed in your environment before usi
 # sample screenshots from MLflow
 
 ![Alt text](https://github.com/sivamanojcmi/data_version_control_dvc/blob/main/mlflow_screenshots/Screenshot%202024-02-24%20182455.png)
+![Alt text](https://github.com/sivamanojcmi/data_version_control_dvc/blob/main/mlflow_screenshots/Screenshot%202024-02-24%20184511.png)
+![Alt text](https://github.com/sivamanojcmi/data_version_control_dvc/blob/main/mlflow_screenshots/Screenshot%202024-02-24%20184600.png)
 
 ## Example
 
