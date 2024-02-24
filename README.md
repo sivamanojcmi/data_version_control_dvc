@@ -85,7 +85,7 @@ Ensure that MLflow and scikit-learn are installed in your environment before usi
 
 # sample screenshots from MLflow
 
-![sample](mlflow_screenshots/Screenshot 2024-02-24 182455.png)
+![Alt text](mlflow_screenshots/Screenshot 2024-02-24 182455.png)
 
 ## Example
 
