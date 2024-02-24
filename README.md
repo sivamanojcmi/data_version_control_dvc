@@ -44,3 +44,53 @@
 
 - Save the files and analyze the distribution of data.
 - This approach allows tracking of all updates and changes made to the data.
+
+# Model Runs with MLflow part 2
+
+## Overview
+
+The `model_runs` function is designed to train machine learning models using scikit-learn's `GridSearchCV`, log the training process and metrics to MLflow, and save important artifacts such as the best model and evaluation metrics.
+
+## Usage
+
+To use the `model_runs` function, follow these steps:
+
+1. **Define Model Parameters**: Define the model name, parameter grid, and the classifier to be used.
+
+2. **Call the Function**: Call the `model_runs` function with the defined parameters.
+
+3. **Review Results**: After the function execution, review the training and evaluation results printed to the console. Additionally, view the logged artifacts in the MLflow UI.
+
+## Function Parameters
+
+- `model_name`: A string representing the name of the model. This will be used as the name of the MLflow run.
+  
+- `param_grid`: A dictionary containing the hyperparameters to be tuned using GridSearchCV.
+
+- `model_classifier`: The scikit-learn classifier object to be trained.
+
+## MLflow Integration
+
+The `model_runs` function integrates with MLflow for experiment tracking and artifact logging. The following information is logged to MLflow:
+
+- **Parameters**: The best hyperparameters found by GridSearchCV are logged.
+  
+- **Metrics**: Various evaluation metrics such as f-beta score, AUC of the Precision-Recall curve, recall, and precision are logged.
+
+- **Artifacts**: The best model and visualizations of the confusion matrix and Precision-Recall curve are logged as MLflow artifacts.
+
+## Requirements
+
+Ensure that MLflow and scikit-learn are installed in your environment before using the `model_runs` function.
+
+## Example
+
+```python
+# Define model parameters
+model_name = "Your_Model_Name"
+param_grid = {...}  # Define your parameter grid
+model_classifier = YourClassifier()  # Instantiate your scikit-learn classifier
+
+# Call the function
+model_runs(model_name, param_grid, model_classifier)
+
