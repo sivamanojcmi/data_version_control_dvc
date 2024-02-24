@@ -94,4 +94,6 @@ model_classifier = YourClassifier()  # Instantiate your scikit-learn classifier
 # Call the function
 model_runs(model_name, param_grid, model_classifier)
 
+# sample screenshots from MLflow
 
+![sample](mlflow_screenshots/Screenshot 2024-02-24 182455.png)
