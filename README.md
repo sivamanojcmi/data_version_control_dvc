@@ -92,7 +92,7 @@ param_grid = {...}  # Define your parameter grid
 model_classifier = YourClassifier()  # Instantiate your scikit-learn classifier
 
 # Call the function
-model_runs(model_name, param_grid, model_classifier)
+model_runs(model_name, param_grid, model_classifier)```
 
 # sample screenshots from MLflow
 
